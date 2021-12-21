@@ -21,7 +21,7 @@
     /* Remover bordas de elementos selecionados */
     outline: none;
     /* Aplica atraso em efeitos de transição */
-    transition: .1s;
+    /* transition: .1s; */
 }
 
 html, body, header, footer, nav, main, article, aside, p, h1, h2, h3, h4, h5, h6, blockquote {
@@ -119,11 +119,11 @@ div.header h1 {
 }
 
 #menu-toggle {
-    margin-left: auto;
-    padding: .8rem;
+    margin: auto .5rem auto auto; /* Conserta bug da rolagem vertical durante a animação. */
     font-size: 1.5rem;
     color: white;
     transition: .2s;
+    text-decoration: none;
 }
 
 /* Responsividade do cabeçalho
